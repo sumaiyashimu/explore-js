@@ -15,8 +15,8 @@ const normalPerson= {
 
 }
 
-// normalPerson.chargeBill(150);
-// console.log(normalPerson.salary);
+normalPerson.chargeBill(150);
+console.log(normalPerson.salary);
 
 const heroPerson={
     firstName: 'hero',
@@ -25,12 +25,12 @@ const heroPerson={
 }
 
 
-// const heroBillCharge= normalPerson.chargeBill.bind(heroPerson);
-// heroBillCharge(2000);
-// console.log(heroPerson.salary);
+const heroBillCharge= normalPerson.chargeBill.bind(heroPerson);
+heroBillCharge(2000);
+console.log(heroPerson.salary);
 
-// normalPerson.chargeBill.call(heroPerson,9000);
-// console.log(heroPerson.salary);
+normalPerson.chargeBill.call(heroPerson,9000);
+console.log(heroPerson.salary);
 
 normalPerson.chargeBill.apply(heroPerson,[900]);
 
