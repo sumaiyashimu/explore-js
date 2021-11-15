@@ -16,3 +16,14 @@ let b = 2;
 [a, b]= [b, a]
 
 // console.log(a, b);
+
+//destructing aliases
+const language={
+    name: "javascript",
+    founder:"Brenden eich",
+    founded: 1995
+}
+
+const { name :languageName, founder: founderName}= language
+
+console.log(languageName, founderName);
